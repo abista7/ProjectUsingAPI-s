@@ -6,4 +6,5 @@
 
 ## How to run:
 - npm install
-- node app.js
+- <del>node app.js</del>
+- node .
