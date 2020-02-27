@@ -9,5 +9,10 @@ app.get('/xposed', lesliesFunction)
 app.get('/abista7', abista7Function)
 
 app.get('*', (req, res) => {
-    res.send('Hello World!')
+    res.send({
+        status: 'ERROR',
+        date: new Date(),
+        param: req.query,
+        response: 'Invalid query param',
+    })
 })
