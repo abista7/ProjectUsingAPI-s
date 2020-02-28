@@ -10,7 +10,7 @@ const ahmadsFunction = (req, res) => {
             }
         })
         .then((response) => {
-            console.log(response)
+            //console.log(response)
             let quotes = ''
             response.data.Quotes.forEach(element => {
                 quotes = quotes + '\n' + JSON.stringify(element)
@@ -18,7 +18,7 @@ const ahmadsFunction = (req, res) => {
             res.send({
                 status: "OK",
                 date: new Date(),
-                response: 'the response is \n' + quotes,
+                response: "the response is" + quotes,
             })
         })
         .catch((error) => {
