@@ -19,6 +19,7 @@
     "dependencies": {
         "axios": "^0.19.2",
         "express": "^4.17.1",
-        "js-sha3": "^0.8.0"
+        "js-sha3": "^0.8.0",
+        "node-fetch": "^2.6.0"
     }
 }

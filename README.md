@@ -3,6 +3,7 @@
 - Ahmad Moussalli
 - Arjun Bista
 - Leslie Zhou
+- Sanjay Mirani
 
 ## How to run:
 - npm install

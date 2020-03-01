@@ -1,8 +1,13 @@
 const axios = require('axios');
+const errorMessage = require('./error.js')
 const openCageApiKey = '93436822ece84058b8bcedfab7954719';
 const openCageApi = 'https://api.opencagedata.com/geocode/v1/json?key=93436822ece84058b8bcedfab7954719&q=Oakland';
 
 const abista7Function = (req, res) => {
+    if (req.query.city == null || req.query.city == '') {
+        res.send(errorMessage(req))
+        return
+    }
     const city = req.query.city;
     let customJSON = {
         "date": new Date(),
