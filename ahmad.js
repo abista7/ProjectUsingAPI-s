@@ -23,7 +23,7 @@ const ahmadsFunction = (req, res) => {
         res.send({
             status: "OK",
             date: new Date(),
-            response: "The lowest flight price is: " + quotes +" USD",
+            response: "The lowest flight price from SFO to "+destinationAirport+" on December 1st 2020 is: " + quotes +" USD",
         })
     })
     .catch((error) => {
