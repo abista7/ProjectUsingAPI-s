@@ -1,14 +1,14 @@
 const axios = require("axios");
 const errorMessage = require('./error.js')
 const ahmadsFunction = (req, res) => {
-    if (req.query.city == null || req.query.city == '') {
+    if (req.query.airport == null || req.query.airport == '') {
         res.send(errorMessage(req))
         return
     }
-    const destinationCity = req.query.city;
+    const destinationAirport = req.query.airport;
     axios({
             "method": "GET",
-            "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/"+destinationCity+"/2020-12-01",
+            "url": "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/SFO-sky/"+destinationAirport+"-sky/2020-12-01",
             "headers": {
                 "content-type": "application/octet-stream",
                 "x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
