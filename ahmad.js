@@ -1,10 +1,10 @@
 const axios = require("axios");
-//const errorMessage = require('./error.js')
+const errorMessage = require('./error.js')
 const ahmadsFunction = (req, res) => {
-    // if (req.query.city == null || req.query.city == '') {
-    //     res.send(errorMessage(req))
-    //     return
-    // }
+    if (req.query.city == null || req.query.city == '') {
+        res.send(errorMessage(req))
+        return
+    }
     const destinationCity = req.query.city;
     axios({
             "method": "GET",
