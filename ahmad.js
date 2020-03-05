@@ -16,9 +16,11 @@ const ahmadsFunction = (req, res) => {
             }
         })
     .then((response) => {
-        let quotes = ''
+        let quotes = 0
+        console.log(response.data);
+        
         response.data.Quotes.forEach(element => {
-            quotes = quotes + JSON.stringify(element.MinPrice);
+            quotes = element.MinPrice;
         });
         res.send({
             status: "OK",
