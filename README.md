@@ -9,7 +9,7 @@
 - `npm install`
 - `node .`
 ## Access example:
- - [Ahmad's API](http://localhost:3000/app/skyscanner?airport=JFK)
- - [Arjun's API](http://localhost:3000/app/abista7?city=berkeley)
- - [Leslie's API](http://localhost:3000/app/xposed?password=123456)
- - [Sanjay's API](http://localhost:3000/app/sanjay417?symbol=AAPL)
+ - [Ahmad's API](http://localhost:3000/skyscanner?airport=JFK)
+ - [Arjun's API](http://localhost:3000/abista7?city=berkeley)
+ - [Leslie's API](http://localhost:3000/xposed?password=123456)
+ - [Sanjay's API](http://localhost:3000/sanjay417?symbol=AAPL)
